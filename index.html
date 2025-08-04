@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Huda National A, C & S Degree College</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <img src="Images/logo2.jpg" alt="College Logo" class="logo" />
+  
+  <h1 style="background-color: #2b2f77;">Huda National A, C & S Degree College</h1>
+  <h2>Student Council Election 2025 - 26</h2>
+
+  <div class="container">
+    <center><button onclick="startVoting()">Start Voting</button>
+    <button onclick="endVoting()">Close Voting</button></center>
+    
+    
+<div id="positionsContainer"></div>
+
+    <form id="formContainer">
+      <!-- PRESIDENT -->
+      <fieldset>
+        <legend>President</legend>
+        <label><input type="radio" name="President" value="Saba Tabassum"><img src="Images/saba.jpg">Saba Tabassum</label>
+        <label><input type="radio" name="President" value="Fariha Firdose"><img src="Images/fariha.jpg">Fariha Firdose</label>
+        <label><input type="radio" name="President" value="Afreen Begum"><img src="Images/afreen begum.jpg">Afreen Begum</label>
+      </fieldset>
+
+      <!-- VICE PRESIDENT -->
+      <fieldset>
+        <legend>Vice President</legend>
+        <label><input type="radio" name="Vice President" value="Rabiya Basri"><img src="Images/rabia.jpg">Rabiya Basri</label>
+        <label><input type="radio" name="Vice President" value="Ayesha Firdose"><img src="Images/ayesha.jpg">Ayesha Firdose</label>
+        <label><input type="radio" name="Vice President" value="Afreen Taj"><img src="Images/afreen taj.jpg">Afreen Taj</label>
+      </fieldset>
+
+      <!-- TREASURER -->
+      <fieldset>
+        <legend>Treasurer</legend>
+        <label><input type="radio" name="Treasurer" value="Saquiba Sultana"><img src="Images/saquiba.jpg">Saquiba Sultana</label>
+        <label><input type="radio" name="Treasurer" value="Misba Iffath A"><img src="Images/iffat.jpg">Misba Iffath A</label>
+        <label><input type="radio" name="Treasurer" value="Shaista"><img src="Images/shaista.jpg">Shaista</label>
+      </fieldset>
+
+      <!-- SECRETARY -->
+      <fieldset>
+        <legend>Secretary</legend>
+        <label><input type="radio" name="Secretary" value="Anjum Fathima"><img src="Images/anjum.jpg">Anjum Fathima</label>
+        <label><input type="radio" name="Secretary" value="Juweriya Safiya B"><img src="Images/juweriya.jpg">Juveriya Safiya B</label>
+      </fieldset>
+
+      <!-- JOINT SECRETARY -->
+      <fieldset>
+        <legend>Joint Secretary</legend>
+        <label><input type="radio" name="Joint Secretary" value="Ayesha Siddiqua"><img src="Images/ayeshasiddiqua.jpg">Ayesha Siddiqua</label>
+        <label><input type="radio" name="Joint Secretary" value="S Mahtab Fathima"><img src="Images/mahtab.jpg">S Mahtab Fathima</label>
+      </fieldset>
+
+      <!-- CULTURAL SECRETARY -->
+      <fieldset>
+        <legend>Cultural Secretary</legend>
+        <label><input type="radio" name="Cultural Secretary" value="Tarannum"><img src="Images/tarannum.jpg">Tarannum</label>
+        <label><input type="radio" name="Cultural Secretary" value="Sadiya Banu"><img src="Images/sadiya.jpg">Sadiya Banu</label>
+      </fieldset>
+
+      <!-- SPORTS SECRETARY -->
+      <fieldset>
+        <legend>Sports Secretary</legend>
+        <label><input type="radio" name="Sports Secretary" value="Hajira Mutahira"><img src="Images/hajiramutahira.jpg">Hajira Mutahira</label>
+        <label><input type="radio" name="Sports Secretary" value="M Hajira Tabassum"><img src="Images/hajira tabassum.jpg">M Hajira Tabassum</label>
+      </fieldset>
+
+      <!-- SPORTS REPRESENTATIVE -->
+      <fieldset>
+        <legend>Sports Representative</legend>
+        <label><input type="radio" name="Sports Representative" value="Humera Bi"><img src="Images/humera.jpg">Humera Bi</label>
+        <label><input type="radio" name="Sports Representative" value="Hafsa Hunain"><img src="Images/hafsa hunain.jpg">Hafsa Hunain</label>
+      </fieldset>
+
+      <center><button type="button" id="submitBtn" onclick="submitVote()">Submit Vote</button>
+            </center>
+      </form>
+
+      <div id="resultsContainer"></div>
+    <div id="results"></div>
+  </div>
+
+  <audio id="beepSound" src="beep.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
